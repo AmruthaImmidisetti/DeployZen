@@ -1,104 +1,103 @@
-🚀 DeployZen – Automated Static Website Deployment on AWS
-🔒 Project Overview
+# 🚀 DeployZen – Automated Static Website Deployment on AWS
 
-DeployZen is a cloud-based platform that makes static website deployment fast and beginner-friendly.
-It allows users to:
+---
 
-Upload a ZIP file or connect a GitHub repository
+## 🔒 Project Overview
 
-Automatically deploy websites on AWS S3 using Lambda
+**DeployZen** is a cloud-based platform that simplifies **static website deployment** for students and developers.  
 
-Manage metadata with DynamoDB
+This project allows users to:  
+- Upload a **ZIP file** or connect a **GitHub repository**  
+- Automatically deploy websites on **AWS S3** using **Lambda**  
+- Store project metadata in **DynamoDB**  
+- Secure access with **Cognito**  
+- Showcase deployed projects through **ZenHub**  
 
-Secure access with Cognito
+By combining AWS services with a Flask-powered backend, DeployZen removes the complexity of cloud setup and provides a **fast, secure, and beginner-friendly deployment solution**.  
 
-Showcase deployed projects through ZenHub
+---
 
-This project removes the complexity of cloud setup and enables quick, automated deployment using a simple Flask-powered web interface.
+## ☁️ Technologies Used
 
-☁️ Technologies Used
+- **Amazon EC2** – Hosting Flask backend  
+- **Amazon S3** – File storage & static site hosting  
+- **AWS Lambda** – Automated unzipping & hosting logic  
+- **Amazon DynamoDB** – Metadata storage for deployments  
+- **Amazon Cognito** – User authentication (signup/login)  
+- **Amazon Lex** – Chatbot integration for deployment guidance  
+- **Flask (Python)** – Backend framework  
+- **HTML + Tailwind CSS** – Frontend user interface  
+- **UUID (Python)** – Short URL generation  
 
-Amazon EC2 – Flask backend hosting
+---
 
-Amazon S3 – File storage & static site hosting
+## 📐 Architecture
 
-AWS Lambda – Automated deployment logic
+📁 Architecture Diagram: [`architecture/deployzen-architecture.png`](./architecture/deployzen-architecture.png)
 
-Amazon DynamoDB – Deployment metadata storage
+**This workflow includes:**
+- Cognito for secure login/signup  
+- Flask backend hosted on EC2  
+- S3 buckets for storing & hosting static sites  
+- Lambda function to automate unzipping and hosting  
+- DynamoDB to store metadata (IDs, URLs, filenames)  
+- ZenHub for public showcase of projects  
+- Lex chatbot to assist beginners step by step  
 
-Amazon Cognito – Authentication (signup/login)
+---
 
-Amazon Lex – Chatbot integration
+## 🔧 Setup Steps
 
-Flask (Python) – Backend framework
+The **complete deployment instructions** with screenshots are provided in this PDF:  
 
-HTML + Tailwind CSS – Frontend UI
+📄 [`deployment-guide.pdf`](./deployment-guide.pdf)
 
-UUID (Python) – Unique short URL generation
+High-level setup includes:  
+1. Launch EC2 instance & deploy Flask backend  
+2. Design frontend with HTML + Tailwind CSS  
+3. Configure S3 buckets for storage & static hosting  
+4. Setup DynamoDB tables for metadata storage  
+5. Create Lambda functions to automate hosting  
+6. Enable Cognito authentication & email verification  
+7. Add Lex chatbot for user assistance  
+8. Publish deployed projects to ZenHub showcase  
 
-📐 Architecture & Workflow
+---
 
-📁 Architecture Diagram: architecture/deployzen-architecture.png
+## 📸 Screenshots
 
-Deployment Workflow:
+📁 [`screenshots/`](./screenshots)
 
-User uploads ZIP file or GitHub repo link
+This folder contains the main UI and AWS service screenshots:  
 
-Flask backend stores data in S3 & DynamoDB
+| Screenshot File       | Description                                  |
+|-----------------------|----------------------------------------------|
+| `home-page.png`       | Home page with deployment options            |
+| `login.png`           | Cognito signup/login page                    |
+| `manual-deploy.png`   | ZIP file deployment workflow                 |
+| `github-deploy.png`   | GitHub repository deployment                 |
+| `s3-files.png`        | Files stored in AWS S3 bucket                |
+| `dynamodb.png`        | Deployment metadata stored in DynamoDB       |
+| `zenhub.png`          | Public showcase page of deployed projects    |
+| `lex-chatbot.png`     | Chatbot assisting users with deployment      |
 
-Lambda is triggered → unzips, creates bucket, hosts files
+---
 
-Cognito secures user sessions
+## ✅ Key Takeaways
 
-Shortened URLs generated using UUID
+- Built an **automated static website deployment pipeline**  
+- Gained hands-on with **AWS integration** (EC2, S3, Lambda, DynamoDB, Cognito, Lex)  
+- Implemented **secure authentication** using Cognito  
+- Enhanced usability with **Lex chatbot assistance**  
+- Delivered a **scalable, beginner-friendly hosting solution**  
 
-Public projects are displayed in ZenHub Showcase
+---
 
-Lex Chatbot assists users with deployment steps
+## 🙋 Author
 
-🔧 Setup Steps
+**Amrutha Varshini**  
+B.Tech – Artificial Intelligence & Machine Learning  
+Aditya College of Engineering and Technology (2023–2027)  
+📍 India  
 
-The deployment guide is documented step-by-step with AWS screenshots in the PDF:
-
-📄 deployment-guide.pdf
-
-High-level steps:
-
-Configure EC2 instance and Flask backend
-
-Connect frontend templates with Tailwind
-
-Integrate S3 & DynamoDB for storage
-
-Setup Lambda triggers for deployment
-
-Add Cognito authentication for secure access
-
-Enable URL redirection and ZenHub Showcase
-
-📸 Screenshots
-
-📁 screenshots/
-
-This folder includes UI and AWS proof:
-
-Screenshot File	Description
-home-page.png	Home page with deployment options
-login.png	Cognito-based signup/login page
-manual-deploy.png	ZIP upload deployment workflow
-github-deploy.png	GitHub repo deployment workflow
-s3-files.png	AWS S3 bucket with hosted files
-dynamodb-table.png	Metadata records in DynamoDB
-zenhub.png	Showcase of deployed projects
-lex-chatbot.png	Chatbot assisting with deployment steps
-✅ Key Takeaways
-
-Gained practical knowledge of AWS service integration
-
-Automated end-to-end static site deployment pipeline
-
-Built secure authentication using Cognito
-
-Improved user experience with Lex chatbot
-
-Learned real-world cloud architecture automation
+---
