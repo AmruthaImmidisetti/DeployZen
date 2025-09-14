@@ -1,4 +1,4 @@
-# 🚀 DeployZen – Automated Static Website Deployment on AWS
+#  DeployZen – Automated Static Website Deployment on AWS
 
 ---
 
@@ -54,7 +54,7 @@ The **complete deployment instructions** with screenshots are provided in this P
 
 High-level setup includes:  
 1. Launch EC2 instance & deploy Flask backend  
-2. Design frontend with HTML + Tailwind CSS  
+2. Design frontend with HTML + Tailwind CSS + JS
 3. Configure S3 buckets for storage & static hosting  
 4. Setup DynamoDB tables for metadata storage  
 5. Create Lambda functions to automate hosting  
@@ -64,40 +64,10 @@ High-level setup includes:
 
 ---
 
-## 📸 Screenshots
-
-📁 [`screenshots/`](./screenshots)
-
-This folder contains the main UI and AWS service screenshots:  
-
-| Screenshot File       | Description                                  |
-|-----------------------|----------------------------------------------|
-| `home-page.png`       | Home page with deployment options            |
-| `login.png`           | Cognito signup/login page                    |
-| `manual-deploy.png`   | ZIP file deployment workflow                 |
-| `github-deploy.png`   | GitHub repository deployment                 |
-| `s3-files.png`        | Files stored in AWS S3 bucket                |
-| `dynamodb.png`        | Deployment metadata stored in DynamoDB       |
-| `zenhub.png`          | Public showcase page of deployed projects    |
-| `lex-chatbot.png`     | Chatbot assisting users with deployment      |
-
----
-
-## ✅ Key Takeaways
+##  Key Takeaways
 
 - Built an **automated static website deployment pipeline**  
 - Gained hands-on with **AWS integration** (EC2, S3, Lambda, DynamoDB, Cognito, Lex)  
 - Implemented **secure authentication** using Cognito  
 - Enhanced usability with **Lex chatbot assistance**  
 - Delivered a **scalable, beginner-friendly hosting solution**  
-
----
-
-## 🙋 Author
-
-**Amrutha Varshini**  
-B.Tech – Artificial Intelligence & Machine Learning  
-Aditya College of Engineering and Technology (2023–2027)  
-📍 India  
-
----
