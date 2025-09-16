@@ -33,8 +33,6 @@ By combining AWS services with a Flask-powered backend, DeployZen removes the co
 
 ## 📐 Architecture
 
-📁 Architecture Diagram: [`architecture/deployzen-architecture.png`](./architecture/deployzen-architecture.png)
-
 **This workflow includes:**
 - Cognito for secure login/signup  
 - Flask backend hosted on EC2  
@@ -50,7 +48,7 @@ By combining AWS services with a Flask-powered backend, DeployZen removes the co
 
 The **complete deployment instructions** with screenshots are provided in this PDF:  
 
-📄 [`deployment-guide.pdf`](./deployment-guide.pdf)
+📄 [`deployment-guide.pdf`](./Project_Documentation.pdf)
 
 High-level setup includes:  
 1. Launch EC2 instance & deploy Flask backend  
