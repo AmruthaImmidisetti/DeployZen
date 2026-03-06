@@ -2,7 +2,7 @@
 
 ---
 
-## 🔒 Project Overview
+##  Project Overview
 
 **DeployZen** is a cloud-based platform that simplifies **static website deployment** for students and developers.  
 
@@ -17,7 +17,7 @@ By combining AWS services with a Flask-powered backend, DeployZen removes the co
 
 ---
 
-## ☁️ Technologies Used
+##  Technologies Used
 
 - **Amazon EC2** – Hosting Flask backend  
 - **Amazon S3** – File storage & static site hosting  
@@ -31,7 +31,7 @@ By combining AWS services with a Flask-powered backend, DeployZen removes the co
 
 ---
 
-## 📐 Architecture
+##  Architecture
 
 **This workflow includes:**
 - Cognito for secure login/signup  
@@ -44,7 +44,7 @@ By combining AWS services with a Flask-powered backend, DeployZen removes the co
 
 ---
 
-## 🔧 Setup Steps
+##  Setup Steps
 
 The **complete deployment instructions** with screenshots are provided in this PDF:  
 
